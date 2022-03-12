@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"rcfid522\startup_stm32f103xb.o"
+"rcfid522\main.o"
+"rcfid522\stm32f1xx_it.o"
+"rcfid522\stm32f1xx_hal_msp.o"
+"rcfid522\i2c-lcd.o"
+"rcfid522\rc522.o"
+"rcfid522\flash.o"
+"rcfid522\stm32f1xx_hal_gpio_ex.o"
+"rcfid522\stm32f1xx_hal_i2c.o"
+"rcfid522\stm32f1xx_hal.o"
+"rcfid522\stm32f1xx_hal_rcc.o"
+"rcfid522\stm32f1xx_hal_rcc_ex.o"
+"rcfid522\stm32f1xx_hal_gpio.o"
+"rcfid522\stm32f1xx_hal_dma.o"
+"rcfid522\stm32f1xx_hal_cortex.o"
+"rcfid522\stm32f1xx_hal_pwr.o"
+"rcfid522\stm32f1xx_hal_flash.o"
+"rcfid522\stm32f1xx_hal_flash_ex.o"
+"rcfid522\stm32f1xx_hal_exti.o"
+"rcfid522\stm32f1xx_hal_spi.o"
+"rcfid522\stm32f1xx_hal_tim.o"
+"rcfid522\stm32f1xx_hal_tim_ex.o"
+"rcfid522\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RCFID522\RCFID522.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RCFID522.map" -o RCFID522\RCFID522.axf
